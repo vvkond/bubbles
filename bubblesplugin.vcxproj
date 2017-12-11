@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{062635C1-19CC-4C83-8851-21C838146453}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>bubblesplugin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\output\plugins\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bubblesplugin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bubblesplugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\output\plugins\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bubblesplugin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bubblesplugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\output\plugins\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">bubblesplugin.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">bubblesplugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\output\plugins\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">bubblesplugin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">bubblesplugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4190;4231;4244;4251;4275;4505;4510;4512;4610;4706;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;_DEBUG;QGISDEBUG=1;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR="Debug";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;_DEBUG;QGISDEBUG=1;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR=\"Debug\";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\core\Debug\qgis_core.lib;..\..\gui\Debug\qgis_gui.lib;..\..\core\Debug\qgis_core.lib;wsock32.lib;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\SetupAPI.Lib;D:\OSGeo4W\lib\qtmain.lib;D:\OSGeo4W\lib\QtXml4.lib;D:\OSGeo4W\lib\QtCore4.lib;D:\OSGeo4W\lib\QtGui4.lib;D:\OSGeo4W\lib\QtNetwork4.lib;D:\OSGeo4W\lib\QtSvg4.lib;D:\OSGeo4W\lib\QtWebKit4.lib;D:\OSGeo4W\lib\QtSql4.lib;D:\OSGeo4W\lib\qca.lib;D:\OSGeo4W\lib\proj.lib;D:\OSGeo4W\lib\geos_c.lib;D:\OSGeo4W\lib\gdal_i.lib;D:\OSGeo4W\lib\spatialindex_i.lib;D:\OSGeo4W\lib\libexpat.lib;D:\OSGeo4W\lib\sqlite3_i.lib;D:\OSGeo4W\lib\spatialite_i.lib;D:\OSGeo4W\lib\QtUiTools.lib;D:\OSGeo4W\lib\qwt.lib;D:\OSGeo4W\lib\qscintilla2.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/OSGeo4W/build/src/core;D:/OSGeo4W/build/src/core/$(Configuration);;D:/OSGeo4W/build/src/gui;D:/OSGeo4W/build/src/gui/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/OSGeo4W/build/src/plugins/bubbles/Debug/bubblesplugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/OSGeo4W/build/output/plugins/Debug/bubblesplugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4190;4231;4244;4251;4275;4505;4510;4512;4610;4706;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_NO_DEBUG;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR="Release";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_NO_DEBUG;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR=\"Release\";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\core\Release\qgis_core.lib;..\..\gui\Release\qgis_gui.lib;..\..\core\Release\qgis_core.lib;wsock32.lib;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\SetupAPI.Lib;D:\OSGeo4W\lib\qtmain.lib;D:\OSGeo4W\lib\QtXml4.lib;D:\OSGeo4W\lib\QtCore4.lib;D:\OSGeo4W\lib\QtGui4.lib;D:\OSGeo4W\lib\QtNetwork4.lib;D:\OSGeo4W\lib\QtSvg4.lib;D:\OSGeo4W\lib\QtWebKit4.lib;D:\OSGeo4W\lib\QtSql4.lib;D:\OSGeo4W\lib\qca.lib;D:\OSGeo4W\lib\proj.lib;D:\OSGeo4W\lib\geos_c.lib;D:\OSGeo4W\lib\gdal_i.lib;D:\OSGeo4W\lib\spatialindex_i.lib;D:\OSGeo4W\lib\libexpat.lib;D:\OSGeo4W\lib\sqlite3_i.lib;D:\OSGeo4W\lib\spatialite_i.lib;D:\OSGeo4W\lib\QtUiTools.lib;D:\OSGeo4W\lib\qwt.lib;D:\OSGeo4W\lib\qscintilla2.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/OSGeo4W/build/src/core;D:/OSGeo4W/build/src/core/$(Configuration);;D:/OSGeo4W/build/src/gui;D:/OSGeo4W/build/src/gui/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>D:/OSGeo4W/build/src/plugins/bubbles/Release/bubblesplugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/OSGeo4W/build/output/plugins/Release/bubblesplugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4190;4231;4244;4251;4275;4505;4510;4512;4610;4706;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_NO_DEBUG;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR="MinSizeRel";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_NO_DEBUG;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR=\"MinSizeRel\";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\core\MinSizeRel\qgis_core.lib;..\..\gui\MinSizeRel\qgis_gui.lib;..\..\core\MinSizeRel\qgis_core.lib;wsock32.lib;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\SetupAPI.Lib;D:\OSGeo4W\lib\qtmain.lib;D:\OSGeo4W\lib\QtXml4.lib;D:\OSGeo4W\lib\QtCore4.lib;D:\OSGeo4W\lib\QtGui4.lib;D:\OSGeo4W\lib\QtNetwork4.lib;D:\OSGeo4W\lib\QtSvg4.lib;D:\OSGeo4W\lib\QtWebKit4.lib;D:\OSGeo4W\lib\QtSql4.lib;D:\OSGeo4W\lib\qca.lib;D:\OSGeo4W\lib\proj.lib;D:\OSGeo4W\lib\geos_c.lib;D:\OSGeo4W\lib\gdal_i.lib;D:\OSGeo4W\lib\spatialindex_i.lib;D:\OSGeo4W\lib\libexpat.lib;D:\OSGeo4W\lib\sqlite3_i.lib;D:\OSGeo4W\lib\spatialite_i.lib;D:\OSGeo4W\lib\QtUiTools.lib;D:\OSGeo4W\lib\qwt.lib;D:\OSGeo4W\lib\qscintilla2.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/OSGeo4W/build/src/core;D:/OSGeo4W/build/src/core/$(Configuration);;D:/OSGeo4W/build/src/gui;D:/OSGeo4W/build/src/gui/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>D:/OSGeo4W/build/src/plugins/bubbles/MinSizeRel/bubblesplugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/OSGeo4W/build/output/plugins/MinSizeRel/bubblesplugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4190;4231;4244;4251;4275;4505;4510;4512;4610;4706;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;QGISDEBUG=1;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_NO_DEBUG;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR="RelWithDebInfo";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;QGISDEBUG=1;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);WITH_QTWEBKIT;QT_DLL;QT_NO_DEBUG;QT_SVG_LIB;QT_WEBKIT_LIB;QT_GUI_LIB;QT_XML_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_NO_CAST_TO_ASCII;override=;nullptr=0;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;PYTHON2;CMAKE_INTDIR=\"RelWithDebInfo\";bubblesplugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\include\qt4;D:\OSGeo4W\include\qt4\QtSvg;D:\OSGeo4W\include\qt4\QtWebKit;D:\OSGeo4W\include\qt4\QtGui;D:\OSGeo4W\include\qt4\QtXml;D:\OSGeo4W\include\qt4\QtSql;D:\OSGeo4W\include\qt4\QtNetwork;D:\OSGeo4W\include\qt4\QtCore;D:\OSGeo4W\build;D:\myprog\QGIS-release-2_14\src\plugins\bubbles;D:\OSGeo4W\include;D:\OSGeo4W\build\src\plugins\bubbles;D:\OSGeo4W\build\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\app;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\geometry;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\raster;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\auth;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\symbology-ng;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\gui\editorwidgets;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..\..\core\dxf;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\core\RelWithDebInfo\qgis_core.lib;..\..\gui\RelWithDebInfo\qgis_gui.lib;..\..\core\RelWithDebInfo\qgis_core.lib;wsock32.lib;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\SetupAPI.Lib;D:\OSGeo4W\lib\qtmain.lib;D:\OSGeo4W\lib\QtXml4.lib;D:\OSGeo4W\lib\QtCore4.lib;D:\OSGeo4W\lib\QtGui4.lib;D:\OSGeo4W\lib\QtNetwork4.lib;D:\OSGeo4W\lib\QtSvg4.lib;D:\OSGeo4W\lib\QtWebKit4.lib;D:\OSGeo4W\lib\QtSql4.lib;D:\OSGeo4W\lib\qca.lib;D:\OSGeo4W\lib\proj.lib;D:\OSGeo4W\lib\geos_c.lib;D:\OSGeo4W\lib\gdal_i.lib;D:\OSGeo4W\lib\spatialindex_i.lib;D:\OSGeo4W\lib\libexpat.lib;D:\OSGeo4W\lib\sqlite3_i.lib;D:\OSGeo4W\lib\spatialite_i.lib;D:\OSGeo4W\lib\QtUiTools.lib;D:\OSGeo4W\lib\qwt.lib;D:\OSGeo4W\lib\qscintilla2.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/OSGeo4W/build/src/core;D:/OSGeo4W/build/src/core/$(Configuration);;D:/OSGeo4W/build/src/gui;D:/OSGeo4W/build/src/gui/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/OSGeo4W/build/src/plugins/bubbles/RelWithDebInfo/bubblesplugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/OSGeo4W/build/output/plugins/RelWithDebInfo/bubblesplugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\exe\CMake\bin\cmake.exe -HD:/myprog/QGIS-release-2_14 -BD:/OSGeo4W/build --check-stamp-file D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\exe\CMake\bin\cmake.exe -HD:/myprog/QGIS-release-2_14 -BD:/OSGeo4W/build --check-stamp-file D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\exe\CMake\bin\cmake.exe -HD:/myprog/QGIS-release-2_14 -BD:/OSGeo4W/build --check-stamp-file D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\exe\CMake\bin\cmake.exe -HD:/myprog/QGIS-release-2_14 -BD:/OSGeo4W/build --check-stamp-file D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\0f32666a1d41d0505182084c925afba7\moc_bubbles.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubbles.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubbles.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubbles.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubbles.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubbles.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubbles.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubbles.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubbles.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubbles.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubbles.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubbles.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubbles.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\0f32666a1d41d0505182084c925afba7\moc_bubblesgui.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_bubblesgui.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubblesgui.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubblesgui.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesgui.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubblesgui.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_bubblesgui.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubblesgui.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubblesgui.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesgui.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubblesgui.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_bubblesgui.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubblesgui.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubblesgui.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesgui.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubblesgui.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_bubblesgui.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bubblesgui.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bubblesgui.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesgui.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bubblesgui.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\0f32666a1d41d0505182084c925afba7\moc_bblmarkersymbollayerwidget.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_bblmarkersymbollayerwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bblmarkersymbollayerwidget.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bblmarkersymbollayerwidget.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bblmarkersymbollayerwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bblmarkersymbollayerwidget.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_bblmarkersymbollayerwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bblmarkersymbollayerwidget.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bblmarkersymbollayerwidget.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bblmarkersymbollayerwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bblmarkersymbollayerwidget.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_bblmarkersymbollayerwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bblmarkersymbollayerwidget.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bblmarkersymbollayerwidget.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bblmarkersymbollayerwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bblmarkersymbollayerwidget.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_bblmarkersymbollayerwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OSGeo4W\build\src\plugins\bubbles
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\OSGeo4W\bin\moc.exe @D:/OSGeo4W/build/src/plugins/bubbles/moc_bblmarkersymbollayerwidget.cxx_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OSGeo4W/build/CMakeFiles/0f32666a1d41d0505182084c925afba7/moc_bblmarkersymbollayerwidget.cxx.rule;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bblmarkersymbollayerwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\moc_bblmarkersymbollayerwidget.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating qrc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\OSGeo4W\bin\rcc.exe -name bubbles -o D:/OSGeo4W/build/src/plugins/bubbles/qrc_bubbles.cxx D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.png;D:\OSGeo4W\build\src\plugins\bubbles\bubbles.qrc.depends;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\qrc_bubbles.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating qrc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\OSGeo4W\bin\rcc.exe -name bubbles -o D:/OSGeo4W/build/src/plugins/bubbles/qrc_bubbles.cxx D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.png;D:\OSGeo4W\build\src\plugins\bubbles\bubbles.qrc.depends;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\qrc_bubbles.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating qrc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\OSGeo4W\bin\rcc.exe -name bubbles -o D:/OSGeo4W/build/src/plugins/bubbles/qrc_bubbles.cxx D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.png;D:\OSGeo4W\build\src\plugins\bubbles\bubbles.qrc.depends;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\qrc_bubbles.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating qrc_bubbles.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\OSGeo4W\bin\rcc.exe -name bubbles -o D:/OSGeo4W/build/src/plugins/bubbles/qrc_bubbles.cxx D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbles.qrc;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.png;D:\OSGeo4W\build\src\plugins\bubbles\bubbles.qrc.depends;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\qrc_bubbles.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesguibase.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ui_bubblesguibase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubblesguibase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesguibase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubblesguibase.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ui_bubblesguibase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubblesguibase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesguibase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubblesguibase.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ui_bubblesguibase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubblesguibase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesguibase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubblesguibase.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ui_bubblesguibase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubblesguibase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubblesguibase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesguibase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubblesguibase.h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbleswidgetbase.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ui_bubbleswidgetbase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubbleswidgetbase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbleswidgetbase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubbleswidgetbase.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ui_bubbleswidgetbase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubbleswidgetbase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbleswidgetbase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubbleswidgetbase.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ui_bubbleswidgetbase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubbleswidgetbase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbleswidgetbase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubbleswidgetbase.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ui_bubbleswidgetbase.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\OSGeo4W\bin\uic.exe -o D:/OSGeo4W/build/src/plugins/bubbles/ui_bubbleswidgetbase.h D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/myprog/QGIS-release-2_14/src/plugins/bubbles/bubbleswidgetbase.ui;D:\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbleswidgetbase.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OSGeo4W\build\src\plugins\bubbles\ui_bubbleswidgetbase.h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_bubblesguibase.h" />
+    <ClInclude Include="ui_bubbleswidgetbase.h" />
+    <ClCompile Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bubbles.cpp" />
+    <ClCompile Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bubblesgui.cpp" />
+    <ClCompile Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bblmarkersymbollayer.cpp" />
+    <ClCompile Include="..\..\..\..\..\myprog\QGIS-release-2_14\src\plugins\bubbles\bblmarkersymbollayerwidget.cpp" />
+    <ClCompile Include="moc_bubbles.cxx" />
+    <ClCompile Include="moc_bubblesgui.cxx" />
+    <ClCompile Include="moc_bblmarkersymbollayerwidget.cxx" />
+    <ClCompile Include="qrc_bubbles.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/OSGeo4W/build/ZERO_CHECK.vcxproj">
+      <Project>213BDABC-0FFD-43CC-8813-AB6BF8A980E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OSGeo4W/build/src/core/qgis_core.vcxproj">
+      <Project>C55457AB-1719-425C-A7BF-20F9107FB7C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OSGeo4W/build/src/gui/qgis_gui.vcxproj">
+      <Project>250A1201-6073-4A09-A6E0-831C04AE658C</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
