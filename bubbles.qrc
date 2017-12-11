@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/bubbles/" >
+        <file>bubbles.png</file>
+    </qresource>
+</RCC>

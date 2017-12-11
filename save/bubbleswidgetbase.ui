@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BubblesSetupWidget</class>
+ <widget class="QWidget" name="BubblesSetupWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>844</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,0">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Диаграммы</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7" columnstretch="0,1,0">
+      <item row="0" column="1" colspan="2">
+       <widget class="QComboBox" name="diagrammType">
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Диаграмма жидкости</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Диаграмма закачки</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Диаграмма газа</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Диаграмма конденсата</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Тип диаграммы</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="titleEdit"/>
+      </item>
+      <item row="6" column="0">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Заголовок</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Масштаб</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="scaleUnitsType">
+        <item>
+         <property name="text">
+          <string>Масса</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Объем</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="scaleEdit">
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="maximum">
+         <double>999999999.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>300000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QComboBox" name="scaleUnitsMass">
+        <item>
+         <property name="text">
+          <string>кг</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>г</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>тонн</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>тыс. тонн</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UK ton (short)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UK ton (long)</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QComboBox" name="scaleUnitsVolume">
+        <item>
+         <property name="text">
+          <string>м3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>дм3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>см3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>км3</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="3">
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="title">
+         <string>Размер (мм)</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Максимальный диаметр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Минимальный диаметр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QDoubleSpinBox" name="minDiagrammSize">
+           <property name="decimals">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <double>999999.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QDoubleSpinBox" name="maxDiagrammSize">
+           <property name="decimals">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <double>999999999.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>100.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Компоненты</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,0">
+      <item row="0" column="0">
+       <widget class="QListWidget" name="componentsList">
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="selectionRectVisible">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Добыча нефти</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Добыча газа</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Добыча воды</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Добыча конденсата</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Закачка газа</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Закачка воды</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Газлифт</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Свободный газ</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Цвет фона</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Цвет линии</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QgsColorButtonV2" name="fluidLineColor">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>Подписи</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Цвет</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QgsColorButtonV2" name="labelColor">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="showInPercent">
+              <property name="text">
+               <string>Показывать добычу в процентах</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Размер</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QDoubleSpinBox" name="labelSize">
+              <property name="decimals">
+               <number>4</number>
+              </property>
+              <property name="singleStep">
+               <double>0.001000000000000</double>
+              </property>
+              <property name="value">
+               <double>0.001000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Точность</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QSpinBox" name="decimalEdit">
+              <property name="value">
+               <number>2</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QFrame" name="frame_2">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="addToTemplate">
+                 <property name="toolTip">
+                  <string>Добавить компонент в шаблон</string>
+                 </property>
+                 <property name="text">
+                  <string>Добавить</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QLineEdit" name="templateExpression"/>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Шаблон</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QgsColorButtonV2" name="fluidBackColor">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Общее</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="showLineouts">
+        <property name="text">
+         <string>Сноски</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="dailyProduction">
+        <property name="text">
+         <string>Среднесуточная добыча</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsColorButtonV2</class>
+   <extends>QToolButton</extends>
+   <header>qgscolorbuttonv2.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>componentsList</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>BubblesSetupWidget</receiver>
+   <slot>fluidItemRowChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>517</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fluidBackColor</sender>
+   <signal>colorChanged(QColor)</signal>
+   <receiver>BubblesSetupWidget</receiver>
+   <slot>fluidBackColorClicked(QColor)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>736</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>518</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fluidLineColor</sender>
+   <signal>colorChanged(QColor)</signal>
+   <receiver>BubblesSetupWidget</receiver>
+   <slot>fluidLineColorClicked(QColor)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>736</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>518</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>labelColor</sender>
+   <signal>colorChanged(QColor)</signal>
+   <receiver>BubblesSetupWidget</receiver>
+   <slot>labelColorChanged(QColor)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>726</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>nameEdit_editingFinished()</slot>
+  <slot>titleEdit_editingFinished()</slot>
+  <slot>scaleEdit_editingFinished()</slot>
+  <slot>diagrammTypeChanged(int)</slot>
+  <slot>diagrammType_EditTextChanged(QString)</slot>
+  <slot>scaleTypeChanged(int)</slot>
+  <slot>minDiagrammSize_ValueChanged(double)</slot>
+  <slot>maxDiagrammSize_ValueChanged(double)</slot>
+  <slot>fluidItemClicked(QListWidgetItem*)</slot>
+  <slot>fluidItemRowChanged(int)</slot>
+  <slot>fluidBackColorClicked(QColor)</slot>
+  <slot>fluidLineColorClicked(QColor)</slot>
+  <slot>labelColorChanged(QColor)</slot>
+  <slot>labelTemplateEditingFinished()</slot>
+  <slot>showLineoutsToggled(bool)</slot>
+  <slot>perDayProdToggled(bool)</slot>
+  <slot>templateButtonChanged(QString)</slot>
+ </slots>
+</ui>
